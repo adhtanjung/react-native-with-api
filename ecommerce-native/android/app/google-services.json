@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "746523598709",
+    "project_id": "commercenative-d7e6b",
+    "storage_bucket": "commercenative-d7e6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746523598709:android:ddeda0193b506a8099fd3c",
+        "android_client_info": {
+          "package_name": "com.commerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746523598709-0o8e6a083bqb8qi4bmpa8sp3dqapql8r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.commerce",
+            "certificate_hash": "7effb7e9cd2cd0645d4e02be17d63ac52698ef25"
+          }
+        },
+        {
+          "client_id": "746523598709-7f88f20k5j6catgf4mhl4nj0ci2or2f3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.commerce",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "746523598709-qoidsvagegvora7es5hr2copient38qh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiwToO5qI85sjxTRUq0ge3NpQ1bk1yLU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746523598709-qoidsvagegvora7es5hr2copient38qh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

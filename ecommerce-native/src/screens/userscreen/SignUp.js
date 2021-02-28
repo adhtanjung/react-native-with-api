@@ -2,15 +2,24 @@ import React, {useState} from 'react';
 import {StyleSheet, Text, View, Pressable} from 'react-native';
 import {Col, Grid, Row} from 'react-native-easy-grid';
 import {TextInput, withTheme, Button, IconButton} from 'react-native-paper';
+import {useDispatch} from 'react-redux';
+import {registerAction} from '../../redux/actions';
 
-const SignUp = ({theme}) => {
+const SignUp = ({theme, navigation}) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const {colors} = theme;
+  const dispatch = useDispatch();
 
-  const handleInput = (e) => {
-    console.log(e);
+  const handleSubmit = () => {
+    dispatch(
+      registerAction({
+        name,
+        email,
+        password,
+      }),
+    );
   };
 
   return (
@@ -59,7 +68,7 @@ const SignUp = ({theme}) => {
               icon="arrow-right"
               color={colors.primary}
               size={30}
-              onPress={() => console.log('to login')}
+              onPress={() => navigation.navigate('Login')}
             />
           </View>
         </View>
@@ -69,10 +78,10 @@ const SignUp = ({theme}) => {
           <Button
             mode="text"
             color={colors.text}
-            onPress={() => console.log('pressed')}
             style={[styles.btn, {backgroundColor: colors.primary}]}
             theme={{roundness: 30, fonts: 'light'}}
-            labelStyle={{fontSize: 18}}>
+            labelStyle={{fontSize: 18}}
+            onPress={handleSubmit}>
             sign up
           </Button>
         </View>

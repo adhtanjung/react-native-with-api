@@ -10,6 +10,8 @@ target 'ecommerce' do
 
   pod 'RNGoogleSignin', :path => '../node_modules/@react-native-community/google-signin'
 
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
   target 'ecommerceTests' do
     inherit! :complete
     # Pods for testing
